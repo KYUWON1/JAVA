@@ -10,28 +10,28 @@ public class SysOutIn {
 
     public static void referInputStream() throws IOException {
 //      System.in
-//        System.out.println("== System.in ==");
-//        System.out.print("입력: ");
-//        // 버퍼에 한글자만 가져옴, 엔터는남아있음,숫자로 변환
-//        int a = System.in.read() - '0'; //int로 변환하기 위해 0빼기
-//        System.out.println("a = " + a);
-//        //입력 스트림에 남아있는 개수만큼 읽어서 소진
-//        System.in.read(new byte[System.in.available()]);
-//
-////      InputStreamReader
-//        System.out.println("== InputStreamReader ==");
-//        InputStreamReader reader = new InputStreamReader(System.in);
-//        char[] c = new char[3];
-//        System.out.print("입력: ");
-//        reader.read(c); //읽어서 c에 넣음
-//        System.out.println(c); //출력
-//
-////      BufferedReader
-//        System.out.println("== BufferedReader ==");
-//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//        System.out.print("입력: ");
-//        String s1 = br.readLine();
-//        System.out.println(s1);
+        System.out.println("== System.in ==");
+        System.out.print("입력: ");
+        // 버퍼에 한글자만 가져옴, 엔터는남아있음,숫자로 변환
+        int a = System.in.read() - '0'; //int로 변환하기 위해 0빼기
+        System.out.println("a = " + a);
+        //입력 스트림에 남아있는 개수만큼 읽어서 소진
+        System.in.read(new byte[System.in.available()]);
+
+//      InputStreamReader
+        System.out.println("== InputStreamReader ==");
+        InputStreamReader reader = new InputStreamReader(System.in);
+        char[] c = new char[3];
+        System.out.print("입력: ");
+        reader.read(c); //읽어서 c에 넣음
+        System.out.println(c); //출력
+
+//      BufferedReader
+        System.out.println("== BufferedReader ==");
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("입력: ");
+        String s1 = br.readLine();
+        System.out.println(s1);
     }
 
     public static void main(String[] args) throws IOException {
